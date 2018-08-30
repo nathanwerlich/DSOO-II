@@ -6,7 +6,6 @@
 package modelos;
 
 /**
- *
  * @author 18200647
  */
 public class ModeloCliente {
