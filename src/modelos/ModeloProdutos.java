@@ -17,6 +17,7 @@ public class ModeloProdutos {
     
 /*
  * Metodos Set
+ *
  */
     public void setNome(String _nome) {
         nome = _nome;
