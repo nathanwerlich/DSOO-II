@@ -28,9 +28,9 @@ public class AdminControleUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        botaoCadastraFuncionarios = new javax.swing.JButton();
+        botaoCadastraClientes = new javax.swing.JButton();
+        botaoCadastraProdutos = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -40,11 +40,26 @@ public class AdminControleUI extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Controle do Administrador"));
 
-        jButton1.setText("Cadastrar Funcionarios");
+        botaoCadastraFuncionarios.setText("Cadastrar Funcionarios");
+        botaoCadastraFuncionarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCadastraFuncionariosActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Cadastrar Clientes");
+        botaoCadastraClientes.setText("Cadastrar Clientes");
+        botaoCadastraClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCadastraClientesActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Cadastrar Produtos");
+        botaoCadastraProdutos.setText("Cadastrar Produtos");
+        botaoCadastraProdutos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCadastraProdutosActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Listar Funcionarios");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -58,6 +73,11 @@ public class AdminControleUI extends javax.swing.JFrame {
         jButton6.setText("Listar Produtos");
 
         jButton7.setText("Sair");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -69,9 +89,9 @@ public class AdminControleUI extends javax.swing.JFrame {
                     .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3))
+                            .addComponent(botaoCadastraFuncionarios)
+                            .addComponent(botaoCadastraClientes)
+                            .addComponent(botaoCadastraProdutos))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton5)
@@ -80,22 +100,22 @@ public class AdminControleUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton3, jButton4, jButton5, jButton6});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botaoCadastraClientes, botaoCadastraFuncionarios, botaoCadastraProdutos, jButton4, jButton5, jButton6});
 
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(botaoCadastraFuncionarios)
                     .addComponent(jButton4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
+                    .addComponent(botaoCadastraClientes)
                     .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(botaoCadastraProdutos)
                     .addComponent(jButton6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton7)
@@ -125,6 +145,30 @@ public class AdminControleUI extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        LoginUI login = new LoginUI();
+        login.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void botaoCadastraFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraFuncionariosActionPerformed
+        CadastroFuncionarioUI telaCadastroFuncionario = new CadastroFuncionarioUI();
+        telaCadastroFuncionario.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botaoCadastraFuncionariosActionPerformed
+
+    private void botaoCadastraClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraClientesActionPerformed
+        CadastroClienteUI telaCadastroCliente = new CadastroClienteUI();
+        telaCadastroCliente.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botaoCadastraClientesActionPerformed
+
+    private void botaoCadastraProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraProdutosActionPerformed
+        CadastroProdutoUI telaCadastroProdutos = new CadastroProdutoUI();
+        telaCadastroProdutos.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botaoCadastraProdutosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,9 +207,9 @@ public class AdminControleUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton botaoCadastraClientes;
+    private javax.swing.JButton botaoCadastraFuncionarios;
+    private javax.swing.JButton botaoCadastraProdutos;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;

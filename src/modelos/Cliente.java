@@ -8,7 +8,7 @@ package modelos;
 /**
  * @author 18200647
  */
-public class ModeloCliente {
+public class Cliente {
     private String nome;
     private String sobrenome;
     private int CPF;

@@ -9,10 +9,10 @@ package modelos;
  *
  * @author 18200647
  */
-public class ModeloProdutos {
+public class Produtos {
     private String nome;
-    private float precoVenda;
-    private float precoCusto;
+    private double precoVenda;
+    private double precoCusto;
     private int quantidade;
     
 /*
@@ -23,10 +23,10 @@ public class ModeloProdutos {
         nome = _nome;
     } 
     
-    public void setPrecoVenda(float _precoVenda) {
+    public void setPrecoVenda(double _precoVenda) {
         precoVenda = _precoVenda;
     }
-    public void setPrecoCusto(float _precoCusto) {
+    public void setPrecoCusto(double _precoCusto) {
         precoCusto = _precoCusto;
     }
     
@@ -42,10 +42,10 @@ public class ModeloProdutos {
         return nome;
     }
     
-    public float getPrecoVenda() {
+    public double getPrecoVenda() {
         return precoVenda;
     }
-    public float getPrecoCusto() {
+    public double getPrecoCusto() {
         return precoCusto;
     }
     

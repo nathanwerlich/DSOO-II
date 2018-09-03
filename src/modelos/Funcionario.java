@@ -9,7 +9,7 @@ package modelos;
  *
  * @author 18200647
  */
-public class ModeloFuncionario {
+public class Funcionario {
     private String nome;
     private String sobrenome;
     private int CPF;
@@ -18,7 +18,7 @@ public class ModeloFuncionario {
     private String dataNasc;
     private String endereco;
     private String cargo;
-    private float salario;
+    private double salario;
     private String usuario;
     private String senha;
     
@@ -56,7 +56,7 @@ public class ModeloFuncionario {
         cargo = _cargo;
     }
    
-    public void setSalario(float _salario) {
+    public void setSalario(double _salario) {
         salario = _salario;
     }
   
@@ -106,15 +106,15 @@ public class ModeloFuncionario {
         return cargo;
     }
    
-    public float getSalario() {
+    public double getSalario() {
         return salario;
     }
   
-    public String setUsuario() {
+    public String getUsuario() {
         return usuario;
     }    
     
-    public String setSenha() {
+    public String getSenha() {
         return senha;
     }     
     
