@@ -6,6 +6,8 @@
 package visao;
 
 import controle.ControleFuncionarioControle;
+import controle.ControleListaClientes;
+import controle.ControleListaItens;
 
 /**
  *
@@ -49,6 +51,11 @@ public class FuncionarioControleUI extends javax.swing.JFrame {
         });
 
         jButton2.setText("Listar Produtos");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         botaoCadastrarClientes.setText("Cadastrar Clientes");
         botaoCadastrarClientes.addActionListener(new java.awt.event.ActionListener() {
@@ -58,6 +65,11 @@ public class FuncionarioControleUI extends javax.swing.JFrame {
         });
 
         jButton4.setText("Listar Clientes");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         botaoSair.setText("Sair");
         botaoSair.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +138,7 @@ public class FuncionarioControleUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSairActionPerformed
-
+        dispose();
        // LoginUI login = new LoginUI();
         //login.setVisible(true);
         //dispose();
@@ -143,6 +155,16 @@ public class FuncionarioControleUI extends javax.swing.JFrame {
         telaCadastroProdutos.setVisible(true);
         
     }//GEN-LAST:event_botaoCadastrarProdutosActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        new ControleListaItens().iniciarListaProdutos();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+            new ControleListaClientes().iniciarListaClientes();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

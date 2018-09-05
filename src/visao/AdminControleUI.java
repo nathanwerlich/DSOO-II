@@ -8,6 +8,7 @@ package visao;
 import controle.ControleAdminControle;
 import controle.ControleListaItens;
 import controle.ControleListaClientes;
+import controle.ControleListaFuncionarios;
 
 /**
  *
@@ -158,13 +159,13 @@ public class AdminControleUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        new ControleListaFuncionarios().iniciarListaFuncionarios();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
 //        LoginUI login = new LoginUI();
 //        login.setVisible(true);
-//        dispose();
+        dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void botaoCadastraFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraFuncionariosActionPerformed
