@@ -5,27 +5,26 @@
  */
 package controle;
 
-import modelos.Produtos;
-import visao.ListaProdutosUI;
+import modelos.Cliente;
+import visao.ListaClientesUI;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-
 /**
  *
  * @author nathan
  */
-public class ControleListaItens {
+public class ControleListaClientes {
     
     DefaultListModel model;
-    ListaProdutosUI visao;
+    ListaClientesUI visao;
     JList lista;
     
-     public void iniciarListaProdutos() {
+public void iniciarListaClientes() {
         iniciarLista();
-        for (Produtos s : ControleCadastroProduto.c1){
+        for (Cliente s : ControleCadastroCliente.c1){
             model.addElement(s.getNome());
         }
 
@@ -33,10 +32,11 @@ public class ControleListaItens {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 int i = lista.getSelectedIndex();
-                visao.getTxtNome().setText(ControleCadastroProduto.c1.get(i).getNome());
-                visao.getTxtQuantidade().setText(ControleCadastroProduto.c1.get(i).getQuantidade());
-                visao.getTxtPrecoCusto().setText(ControleCadastroProduto.c1.get(i).getPrecoCusto());
-                visao.getTxtPrecoVenda().setText(ControleCadastroProduto.c1.get(i).getPrecoVenda());
+                visao.getTxtNome().setText(ControleCadastroCliente.c1.get(i).getNome());
+                visao.getTxtSobrenome().setText(ControleCadastroCliente.c1.get(i).getSobrenome());
+                visao.getTxtCPF().setText(ControleCadastroCliente.c1.get(i).getCPF());
+                visao.getTxtTelefone().setText(ControleCadastroCliente.c1.get(i).getTelefone());
+                visao.getTxtEndereco().setText(ControleCadastroCliente.c1.get(i).getEndereco());
             }
         });
 
@@ -45,11 +45,12 @@ public class ControleListaItens {
     }
      
     public void iniciarLista() {
-       visao = new ListaProdutosUI();
+       visao = new ListaClientesUI();
        lista = visao.getLista();
        model = new DefaultListModel();
        lista.setModel(model);
        model.clear();
     }
+    
     
 }

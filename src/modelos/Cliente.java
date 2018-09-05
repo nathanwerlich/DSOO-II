@@ -13,7 +13,7 @@ public class Cliente {
     private String sobrenome;
     private String CPF;
     private int RG;
-    private int telefone;
+    private String telefone;
     private String dataNasc;
     private String endereco;
     
@@ -35,7 +35,7 @@ public class Cliente {
         RG = _RG;    
     }
     
-    public void setTelefone(int _telefone) {
+    public void setTelefone(String _telefone) {
         telefone = _telefone;
     }
    
@@ -70,7 +70,7 @@ public class Cliente {
         return RG;    
     }
     
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
    

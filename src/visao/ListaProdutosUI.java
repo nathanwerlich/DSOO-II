@@ -47,11 +47,6 @@ public class ListaProdutosUI extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Produtos"));
 
-        listaProdutos.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(listaProdutos);
 
         jLabel1.setText("Nome:");
@@ -181,7 +176,7 @@ public class ListaProdutosUI extends javax.swing.JFrame {
         return nome_produto;
     }
 
-    public void setTxtNome(JTextField nome_prduto) {
+    public void setTxtNome(JTextField nome_produto) {
         this.nome_produto = nome_produto;
     }
     
@@ -189,8 +184,24 @@ public class ListaProdutosUI extends javax.swing.JFrame {
         return quantidade_produto;
     }
 
-    public void setTxtQuantidade(JTextField quantidade_prduto) {
+    public void setTxtQuantidade(JTextField quantidade_produto) {
         this.quantidade_produto = quantidade_produto;
+    }
+    
+    public JTextField getTxtPrecoCusto() {
+        return precoCusto_produto;
+    }
+
+    public void setTxtPrecoCusto(JTextField precoCusto_produto) {
+        this.precoCusto_produto = precoCusto_produto;
+    }
+    
+    public JTextField getTxtPrecoVenda() {
+        return precoVenda_produto;
+    }
+
+    public void setTxtPrecoVenda(JTextField precoVenda_produto) {
+        this.precoVenda_produto = precoVenda_produto;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

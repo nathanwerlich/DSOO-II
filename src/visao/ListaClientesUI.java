@@ -5,6 +5,9 @@
  */
 package visao;
 
+import javax.swing.JList;
+import javax.swing.JTextField;
+
 /**
  *
  * @author nathan
@@ -137,6 +140,51 @@ public class ListaClientesUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+     public JList getLista(){
+        return listaClientes;
+    }
+    
+    public JTextField getTxtNome() {
+        return nome_cliente;
+    }
+
+    public void setTxtNome(JTextField nome_cliente) {
+        this.nome_cliente = nome_cliente;
+    }
+    
+    public JTextField getTxtSobrenome() {
+        return sobrenome_cliente;
+    }
+
+    public void setTxtSobrenome(JTextField sobrenome_cliente ) {
+        this.sobrenome_cliente = sobrenome_cliente ;
+    }
+    
+    public JTextField getTxtCPF() {
+        return cpf_cliente;
+    }
+
+    public void setTxtCPF(JTextField cpf_cliente) {
+        this.cpf_cliente = cpf_cliente;
+    }
+    
+    public JTextField getTxtTelefone() {
+        return telefone_cliente;
+    }
+
+    public void setTxtTelefone(JTextField telefone_cliente) {
+        this.telefone_cliente = telefone_cliente;
+    }
+    
+    public JTextField getTxtEndereco() {
+        return endereco_cliente;
+    }
+
+    public void setTxtEndereco(JTextField endereco_cliente) {
+        this.endereco_cliente = endereco_cliente;
+    }
+    
+    
     /**
      * @param args the command line arguments
      */

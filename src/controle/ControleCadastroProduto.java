@@ -35,8 +35,8 @@ public static ArrayList<Produtos> c1 = new ArrayList<>();
             Produtos produto = new Produtos();
 
             produto.setNome(nome);
-            produto.setPrecoVenda(Double.parseDouble(precoVenda));
-            produto.setPrecoCusto(Double.parseDouble(precoCusto));
+            produto.setPrecoVenda(precoVenda);
+            produto.setPrecoCusto(precoCusto);
             produto.setQuantidade(quantidade);
 
             c1.add(produto);

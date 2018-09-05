@@ -6,6 +6,8 @@
 package visao;
 
 import controle.ControleAdminControle;
+import controle.ControleListaItens;
+import controle.ControleListaClientes;
 
 /**
  *
@@ -35,7 +37,7 @@ public class AdminControleUI extends javax.swing.JFrame {
         botaoCadastraClientes = new javax.swing.JButton();
         botaoCadastraProdutos = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        botao_listar_clientes = new javax.swing.JButton();
         botao_listar_produto = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
 
@@ -71,7 +73,12 @@ public class AdminControleUI extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setText("Listar Clientes");
+        botao_listar_clientes.setText("Listar Clientes");
+        botao_listar_clientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao_listar_clientesActionPerformed(evt);
+            }
+        });
 
         botao_listar_produto.setText("Listar Produtos");
         botao_listar_produto.addActionListener(new java.awt.event.ActionListener() {
@@ -102,13 +109,13 @@ public class AdminControleUI extends javax.swing.JFrame {
                             .addComponent(botaoCadastraProdutos))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton5)
+                            .addComponent(botao_listar_clientes)
                             .addComponent(jButton4)
                             .addComponent(botao_listar_produto))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botaoCadastraClientes, botaoCadastraFuncionarios, botaoCadastraProdutos, botao_listar_produto, jButton4, jButton5});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {botaoCadastraClientes, botaoCadastraFuncionarios, botaoCadastraProdutos, botao_listar_clientes, botao_listar_produto, jButton4});
 
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,7 +127,7 @@ public class AdminControleUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(botaoCadastraClientes)
-                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(botao_listar_clientes, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botaoCadastraProdutos)
@@ -178,9 +185,13 @@ public class AdminControleUI extends javax.swing.JFrame {
     }//GEN-LAST:event_botaoCadastraProdutosActionPerformed
 
     private void botao_listar_produtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_listar_produtoActionPerformed
-        ListaProdutosUI telaListaProdutos = new ListaProdutosUI();
-        telaListaProdutos.setVisible(true);   
+        new ControleListaItens().iniciarListaProdutos();
+        //telaListaProdutos.setVisible(true);   
     }//GEN-LAST:event_botao_listar_produtoActionPerformed
+
+    private void botao_listar_clientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_listar_clientesActionPerformed
+        new ControleListaClientes().iniciarListaClientes();
+    }//GEN-LAST:event_botao_listar_clientesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,9 +233,9 @@ public class AdminControleUI extends javax.swing.JFrame {
     private javax.swing.JButton botaoCadastraClientes;
     private javax.swing.JButton botaoCadastraFuncionarios;
     private javax.swing.JButton botaoCadastraProdutos;
+    private javax.swing.JButton botao_listar_clientes;
     private javax.swing.JButton botao_listar_produto;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

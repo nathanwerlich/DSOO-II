@@ -11,8 +11,8 @@ package modelos;
  */
 public class Produtos {
     private String nome;
-    private double precoVenda;
-    private double precoCusto;
+    private String precoVenda;
+    private String precoCusto;
     private String quantidade;
     
 /*
@@ -23,10 +23,10 @@ public class Produtos {
         nome = _nome;
     } 
     
-    public void setPrecoVenda(double _precoVenda) {
+    public void setPrecoVenda(String _precoVenda) {
         precoVenda = _precoVenda;
     }
-    public void setPrecoCusto(double _precoCusto) {
+    public void setPrecoCusto(String _precoCusto) {
         precoCusto = _precoCusto;
     }
     
@@ -42,10 +42,10 @@ public class Produtos {
         return nome;
     }
     
-    public double getPrecoVenda() {
+    public String getPrecoVenda() {
         return precoVenda;
     }
-    public double getPrecoCusto() {
+    public String getPrecoCusto() {
         return precoCusto;
     }
     

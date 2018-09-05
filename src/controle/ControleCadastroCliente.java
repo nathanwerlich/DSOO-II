@@ -39,7 +39,7 @@ public class ControleCadastroCliente {
                 cliente.setSobrenome(sobrenome);
                 cliente.setCPF(cpf);
                 cliente.setRG(Integer.parseInt(rg));
-                cliente.setTelefone(Integer.parseInt(telefone));
+                cliente.setTelefone(telefone);
                 cliente.setDataNasc(dataNasc);
                 cliente.setEndereco(endereco);
 
