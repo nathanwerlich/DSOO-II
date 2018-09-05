@@ -158,19 +158,18 @@ public class AdminControleUI extends javax.swing.JFrame {
     private void botaoCadastraFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraFuncionariosActionPerformed
         CadastroFuncionarioUI telaCadastroFuncionario = new CadastroFuncionarioUI();
         telaCadastroFuncionario.setVisible(true);
-        dispose();
     }//GEN-LAST:event_botaoCadastraFuncionariosActionPerformed
 
     private void botaoCadastraClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraClientesActionPerformed
         CadastroClienteUI telaCadastroCliente = new CadastroClienteUI();
         telaCadastroCliente.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_botaoCadastraClientesActionPerformed
 
     private void botaoCadastraProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraProdutosActionPerformed
         CadastroProdutoUI telaCadastroProdutos = new CadastroProdutoUI();
         telaCadastroProdutos.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_botaoCadastraProdutosActionPerformed
 
     /**

@@ -95,7 +95,7 @@ public class CadastroFuncionarioUI extends javax.swing.JFrame {
 
         jLabel9.setText("Salário:");
 
-        input_cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Atendente", "Estagiario", "Gerente", "Vendedor" }));
+        input_cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Atendente", "Estagiario", "Gerente", "Vendedor" }));
         input_cargo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 input_cargoActionPerformed(evt);
@@ -106,6 +106,12 @@ public class CadastroFuncionarioUI extends javax.swing.JFrame {
 
         jLabel11.setText("Senha:");
 
+        input_senha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                input_senhaActionPerformed(evt);
+            }
+        });
+
         botaoCadastra.setText("Cadastrar");
         botaoCadastra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +120,11 @@ public class CadastroFuncionarioUI extends javax.swing.JFrame {
         });
 
         jButton2.setText("Voltar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -276,6 +287,15 @@ public class CadastroFuncionarioUI extends javax.swing.JFrame {
         input_usuario.setText("");
         input_senha.setText("");
     }//GEN-LAST:event_botaoCadastraActionPerformed
+
+    private void input_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_senhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_input_senhaActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

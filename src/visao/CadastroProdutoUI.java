@@ -60,6 +60,11 @@ public class CadastroProdutoUI extends javax.swing.JFrame {
         });
 
         jButton2.setText("Voltar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Quantidade:");
 
@@ -152,6 +157,11 @@ public class CadastroProdutoUI extends javax.swing.JFrame {
         input_precoVenda.setText("");
         input_quantidade.setText("");
     }//GEN-LAST:event_botaoCadastrarActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

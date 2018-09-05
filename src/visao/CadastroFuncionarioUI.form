@@ -267,12 +267,11 @@
         <Component class="javax.swing.JComboBox" name="input_cargo">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value="Administrador"/>
-                <StringItem index="1" value="Atendente"/>
-                <StringItem index="2" value="Estagiario"/>
-                <StringItem index="3" value="Gerente"/>
-                <StringItem index="4" value="Vendedor"/>
+              <StringArray count="4">
+                <StringItem index="0" value="Atendente"/>
+                <StringItem index="1" value="Estagiario"/>
+                <StringItem index="2" value="Gerente"/>
+                <StringItem index="3" value="Vendedor"/>
               </StringArray>
             </Property>
           </Properties>
@@ -298,6 +297,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JPasswordField" name="input_senha">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="input_senhaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="botaoCadastra">
           <Properties>
@@ -311,6 +313,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Voltar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

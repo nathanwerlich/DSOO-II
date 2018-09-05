@@ -31,18 +31,22 @@ public class ControleLogin {
     
     public void validaLogin(String login, String senha) {
             ControleCadastroFuncionario.c1.add(new Funcionario("admin", "admin"));
-            for (Funcionario s : ControleCadastroFuncionario.c1) {
-                if (s.getUsuario().equals(login)) {
-                     if (s.getSenha().equals("admin") && s.getUsuario().equals("admin")){
+            ControleCadastroFuncionario.c1.add(new Funcionario("123", "123"));
+            
+            if ((login.equals("admin")) && (senha.equals("admin"))){
                             //loginUI.dispose();
                             new ControleAdminControle().mostraTela();
-                            break;
-                        }
+            }
+            
+            for (Funcionario s : ControleCadastroFuncionario.c1) {
+                if (s.getUsuario().equals(login)) {
                     if(s.getSenha().equals(senha)) {
-                        JOptionPane.showMessageDialog(null, "Logou");
+                        //JOptionPane.showMessageDialog(null, "Logou");
+                        new ControleFuncionarioControle().mostraTela();
                         break;
                     } else {
                         JOptionPane.showMessageDialog(null, "Senha incorreta");
+                        break;
                     }
                 }
             }
