@@ -6,7 +6,6 @@
 package visao;
 
 import controle.ControleCadastroFuncionario;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -256,14 +255,6 @@ public class CadastroFuncionarioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_input_cargoActionPerformed
 
     private void botaoCadastraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraActionPerformed
-        /*if ((input_telefone.getText().isEmpty()) || (input_datanascimento.getText().isEmpty()) || 
-                (input_endereco.getText().isEmpty()) || (input_salario.getText().isEmpty()) ||
-                (input_usuario.getText().isEmpty()) || (input_senha.getText().isEmpty()) || (input_nome.getText().isEmpty()) || (input_sobrenome.getText().isEmpty()) ||
-                (input_cpf.getText().isEmpty())) {
-            
-                    JOptionPane.showMessageDialog(null, "Existem campos vazios!!!");
-        }
-        */
         controle.cadastroFuncionario(input_nome.getText(),
                                      input_sobrenome.getText(),
                                      input_cpf.getText(),

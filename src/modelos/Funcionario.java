@@ -12,20 +12,30 @@ package modelos;
 public class Funcionario {
     private String nome;
     private String sobrenome;
-    private int CPF;
-    private int RG;
-    private int telefone;
+    private String CPF;
+    private String RG;
+    private String telefone;
     private String dataNasc;
     private String endereco;
     private String cargo;
-    private double salario;
+    private String salario;
     private String usuario;
     private String senha;
 
     public Funcionario() {
     }
 
-    public Funcionario(String usuario, String senha) {
+    public Funcionario(String nome, String sobrenome, String cpf, String rg, String telefone, String dataNasc,
+                                    String endereco, String cargo, String salario, String usuario, String senha) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.CPF = cpf;
+        this.RG = rg;
+        this.telefone = telefone;
+        this.dataNasc = dataNasc;
+        this.endereco = endereco;
+        this.cargo = cargo;
+        this.salario = salario;
         this.usuario = usuario;
         this.senha = senha;
     }
@@ -42,15 +52,15 @@ public class Funcionario {
     public void setSobrenome(String _sobrenome) {
         sobrenome = _sobrenome;
     }
-    public void setCPF(int _CPF) {
+    public void setCPF(String _CPF) {
         CPF = _CPF;
     }
     
-    public void setRG(int _RG) {
+    public void setRG(String _RG) {
         RG = _RG;    
     }
     
-    public void setTelefone(int _telefone) {
+    public void setTelefone(String _telefone) {
         telefone = _telefone;
     }
    
@@ -66,7 +76,7 @@ public class Funcionario {
         cargo = _cargo;
     }
    
-    public void setSalario(double _salario) {
+    public void setSalario(String _salario) {
         salario = _salario;
     }
   
@@ -92,15 +102,15 @@ public class Funcionario {
     public String getSobrenome() {
         return sobrenome;
     }
-    public int getCPF() {
+    public String getCPF() {
         return CPF;
     }
     
-    public int getRG() {
+    public String getRG() {
         return RG;    
     }
     
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
    
@@ -116,7 +126,7 @@ public class Funcionario {
         return cargo;
     }
    
-    public double getSalario() {
+    public String getSalario() {
         return salario;
     }
   

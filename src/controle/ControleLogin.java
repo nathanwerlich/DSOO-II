@@ -30,8 +30,8 @@ public class ControleLogin {
     
     
     public void validaLogin(String login, String senha) {
-            ControleCadastroFuncionario.c1.add(new Funcionario("admin", "admin"));
-            ControleCadastroFuncionario.c1.add(new Funcionario("123", "123"));
+            //ControleCadastroFuncionario.c1.add(new Funcionario("admin", "admin"));
+            ControleCadastroFuncionario.c1.add(new Funcionario("Nathan", "Werlich", "123456", "654321", "312321", "10/01/1994", "Rua Tal", "Atendente", "321321321", "nathan", "nathan"));
             
             if ((login.equals("admin")) && (senha.equals("admin"))){
                             //loginUI.dispose();

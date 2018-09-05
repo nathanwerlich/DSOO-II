@@ -11,7 +11,7 @@ package modelos;
 public class Cliente {
     private String nome;
     private String sobrenome;
-    private int CPF;
+    private String CPF;
     private int RG;
     private int telefone;
     private String dataNasc;
@@ -27,7 +27,7 @@ public class Cliente {
     public void setSobrenome(String _sobrenome) {
         sobrenome = _sobrenome;
     }
-    public void setCPF(int _CPF) {
+    public void setCPF(String _CPF) {
         CPF = _CPF;
     }
     
@@ -62,7 +62,7 @@ public class Cliente {
     public String getSobrenome() {
         return sobrenome;
     }
-    public int getCPF() {
+    public String getCPF() {
         return CPF;
     }
     

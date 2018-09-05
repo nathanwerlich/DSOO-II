@@ -13,7 +13,7 @@ public class Produtos {
     private String nome;
     private double precoVenda;
     private double precoCusto;
-    private int quantidade;
+    private String quantidade;
     
 /*
  * Metodos Set
@@ -30,7 +30,7 @@ public class Produtos {
         precoCusto = _precoCusto;
     }
     
-    public void setQuantidade(int _quantidade) {
+    public void setQuantidade(String _quantidade) {
         quantidade = _quantidade;    
     }
  
@@ -49,7 +49,7 @@ public class Produtos {
         return precoCusto;
     }
     
-    public int getQuantidade() {
+    public String getQuantidade() {
         return quantidade;    
     }
     
